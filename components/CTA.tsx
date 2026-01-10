@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const CTA = () => {
   return (
@@ -25,12 +26,16 @@ const CTA = () => {
               Join the exclusive network of business owners and investors shaping the future of Indian enterprise.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="bg-white text-blue-600 px-10 py-5 rounded-full text-lg font-bold hover:bg-gray-100 transition-all flex items-center gap-2">
-                Book a Consultation <ArrowRight size={20} />
-              </button>
-              <button className="text-white border border-white/30 hover:bg-white/10 px-10 py-5 rounded-full text-lg font-bold transition-all">
-                View Listings
-              </button>
+              <Link href="/contact">
+                <button className="bg-white text-blue-600 px-10 py-5 rounded-full text-lg font-bold hover:bg-gray-100 transition-all flex items-center gap-2">
+                  Book a Consultation <ArrowRight size={20} />
+                </button>
+              </Link>
+              <Link href="/buy">
+                <button className="text-white border border-white/30 hover:bg-white/10 px-10 py-5 rounded-full text-lg font-bold transition-all">
+                  View Listings
+                </button>
+              </Link>
             </div>
           </div>
         </div>

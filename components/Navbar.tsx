@@ -19,10 +19,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Buy a Business', href: '#' },
-    { name: 'Sell a Business', href: '#' },
-    { name: 'Advisory', href: '#' },
+    { name: 'Buy a Business', href: '/buy' },
+    { name: 'Sell a Business', href: '/sell' },
+    { name: 'Advisory', href: '/advisory' },
     { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -54,9 +55,11 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all flex items-center gap-2">
-            Get Started <ChevronRight size={16} />
-          </button>
+          <Link href="/contact">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all flex items-center gap-2">
+              Get Started <ChevronRight size={16} />
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}

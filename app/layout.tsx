@@ -17,11 +17,15 @@ export const metadata: Metadata = {
   title: "Atlas M&A Advisory | Premium Business Acquisitions & Exits",
   description: "Atlas M&A Advisory orchestrates high-stakes acquisitions and exits for businesses with ₹100Cr+ valuations. Precision, privacy, and premium advisory for the global elite.",
   icons: {
-    icon: "https://cdn-icons-png.flaticon.com/512/2942/2942503.png", // Professional business icon
+    icon: "https://cdn-icons-png.flaticon.com/512/2942/2942503.png",
+    shortcut: "https://cdn-icons-png.flaticon.com/512/2942/2942503.png",
+    apple: "https://cdn-icons-png.flaticon.com/512/2942/2942503.png",
   },
   openGraph: {
     title: "Atlas M&A Advisory | The Gold Standard in M&A",
     description: "Strategic M&A advisory for high-growth enterprises. We bridge the gap between vision and value.",
+    url: "https://atlasmna.com",
+    siteName: "Atlas M&A Advisory",
     images: [
       {
         url: "https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&dpr=2",
@@ -30,12 +34,13 @@ export const metadata: Metadata = {
         alt: "Atlas M&A Advisory Corporate Headquarters",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atlas M&A Advisory",
-    description: "Premium M&A advisory for high-growth enterprises.",
+    title: "Atlas M&A Advisory | Premium Business Acquisitions",
+    description: "Strategic M&A advisory for high-growth enterprises with ₹100Cr+ valuations.",
     images: ["https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&dpr=2"],
   },
 };

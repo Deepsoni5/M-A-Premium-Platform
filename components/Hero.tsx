@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight, Shield, TrendingUp, Globe } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -62,12 +63,16 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 group">
-            Start Your Exit <ChevronRight className="group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="w-full sm:w-auto glass-morphism hover:bg-white/10 text-white px-8 py-4 rounded-full text-lg font-bold transition-all">
-            Browse Opportunities
-          </button>
+          <Link href="/sell" className="w-full sm:w-auto">
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 group">
+              Start Your Exit <ChevronRight className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
+          <Link href="/buy" className="w-full sm:w-auto">
+            <button className="w-full glass-morphism hover:bg-white/10 text-white px-8 py-4 rounded-full text-lg font-bold transition-all">
+              Browse Opportunities
+            </button>
+          </Link>
         </motion.div>
 
         {/* Stats/Trust Indicators */}
